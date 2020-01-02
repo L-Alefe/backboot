@@ -12,6 +12,7 @@ public class ProdutoModel implements Serializable {
     private long id;
 
     private String nome;
+
     private Boolean status;
 
     public long getId() {

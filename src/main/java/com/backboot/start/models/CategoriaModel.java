@@ -13,7 +13,6 @@ public class CategoriaModel implements Serializable {
 
     private Boolean status;
 
-
     public long getId() {
         return this.id;
     }

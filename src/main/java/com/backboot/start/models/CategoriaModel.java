@@ -15,9 +15,6 @@ public class CategoriaModel implements Serializable {
 
     private Boolean status;
 
-    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
-    private List<ProdutoModel> produto;
-
     private String tipo;
 
     public String getTipo() {
@@ -26,14 +23,6 @@ public class CategoriaModel implements Serializable {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    public List<ProdutoModel> getProduto() {
-        return produto;
-    }
-
-    public void setProduto(List<ProdutoModel> produto) {
-        this.produto = produto;
     }
 
     public Long getId() {
